@@ -10,7 +10,7 @@ from werkzeug.routing import BaseConverter
 from werkzeug.exceptions import HTTPException
 
 
-app = flask.Flask(__name__)
+app = Flask(__name__, template_folder='Templates') 
 app.config["DEBUG"] = True
 app.secret_key='s'
 class RegexConverter(BaseConverter):
