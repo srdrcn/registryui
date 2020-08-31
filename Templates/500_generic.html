@@ -1,0 +1,292 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>500 error </title>
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+ 
+  <script type="text/javascript">
+    try {
+      Typekit.load();
+    } catch (e) {}
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    ul,
+    ol,
+    img,
+    .button,
+    .line,
+    .button-group,
+    .triangle-group,
+    .text-label,
+    .form-extra-links-row {
+      margin-top: 20px;
+    }
+
+    h1:first-child,
+    h2:first-child,
+    h3:first-child,
+    h4:first-child,
+    p:first-child,
+    ul:first-child,
+    ol:first-child,
+    img:first-child,
+    .button:first-child,
+    .line:first-child {
+      margin-top: 0px;
+    }
+
+    h1:empty,
+    h2:empty,
+    h3:empty,
+    h4:empty,
+    p:empty,
+    ul:empty,
+    ol:empty {
+      margin-top: 0px;
+    }
+
+    li,
+    h1+p,
+    h2+p,
+    h3+p,
+    h4+p,
+    p+p {
+      margin-top: 10px;
+    }
+
+    li:first-child,
+    h1+p:first-child,
+    h2+p:first-child,
+    h3+p:first-child,
+    h4+p:first-child,
+    p+p:first-child {
+      margin-top: 0px;
+    }
+
+    li:empty,
+    h1+p:empty,
+    h2+p:empty,
+    h3+p:empty,
+    h4+p:empty,
+    p+p:empty {
+      margin-top: 0px;
+    }
+
+    body,
+    html,
+    main {
+      font-family: myriad-pro, 'Myriad Pro', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 100%;
+      font-size: 20px;
+      line-height: 26px;
+      color: #555555;
+      background-color:#2A323C ;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    outline:a:visited {
+      color: #999999;
+      text-decoration: underline;
+      outline: 0;
+    }
+
+    a:hover {
+      color: #3B4654;
+    }
+
+    a:active {
+      color: #285989;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    h1,
+    h2,
+    h3,
+    .h1,
+    .h2,
+    .h3,
+    p {
+      font-family: myriad-pro, 'Myriad Pro', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      margin: 0;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      -webkit-margin-start: 0;
+      -webkit-margin-end: 0;
+    }
+
+    h1 {
+      font-size: 90px;
+      line-height: 90px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      color: #d46f40;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 400;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 25px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      h1 {
+        font-size: 130px;
+        line-height: 130px;
+      }
+      h2 {
+        font-size: 40px;
+        line-height: 45px;
+      }
+      h3 {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+
+    @media only screen and (min-width: 980px) {
+      h1 {
+        font-size: 190px;
+        line-height: 190px;
+      }
+      h2 {
+        font-size: 45px;
+        line-height: 50px;
+      }
+    }
+
+    /*//////BASIC LAYOUT//////*/
+
+    header {
+      display: block;
+      padding: 15px;
+      margin: 0 auto;
+      max-width: 1600px;
+    }
+
+    header a {
+      display: inline-block;
+      vertical-align: middle;
+      height: 40px;
+      margin-right: 15px;
+      max-width: 300px;
+    }
+
+    header img {
+      display: block;
+      height: 40px;
+    }
+
+    header span {
+      display: inline-block;
+      vertical-align: middle;
+
+      font-size: 16px;
+      line-height: 1;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: #777;
+    }
+
+    section {
+      position: relative;
+      display: block;
+      padding: 15px;
+      margin: 0 auto;
+      max-width: 1600px;
+      text-align: center;
+      height: calc(100vh - 60px);
+    }
+
+    section #content {
+      position: absolute;
+      display: block;
+      width: calc(100% - 30px);
+      height: auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .type {
+      display: inline-block;
+
+      font-size: 16px;
+      line-height: 1;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: #ccc;
+
+      margin-bottom: 30px
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+    
+       
+    </header>
+    <section>
+      <div id="content">
+        <h1>500</h1>
+        <p class="type">Error: 500 Internal Server Error</p><br>
+        <p class="type">Docker Image Manifest Not Found</p>
+
+        <p><a href="javascript:history.back()"> Go Back</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+ 
+
+<script>
+   
+$(document).ready(function(){
+window.history.replaceState('','',window.location.href)
+});
+
+function goBack() {
+  window.history.back();
+
+}
+</script>
+</html>

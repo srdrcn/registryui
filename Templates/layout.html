@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+    <style>
+@import url(https://fonts.googleapis.com/css?family=Exo
+);
+
+body {
+  font-family: 'SourceSansPro-SemiBold';
+  /*background: url('https://i.imgur.com/P9KDS9J.png') no-repeat fixed center center / cover;*/
+}
+
+section {
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  max-width: 640px;
+  transform: translateX(-50%);
+  display: block;
+}
+
+.msg{
+  border-top: 2px solid #D46F40;
+  border-bottom: 2px solid #D46F40;
+  padding: 0.5em 0em 0em;
+  display: block;
+  text-align: center;
+  background-color:#28303a
+}
+
+
+  
+
+    
+    </style>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/static/Bootstrap-3.4.1/bootstrap.min.css">
+    <script src="/static/jQuery-3.3.1/jquery-3.5.1.js"></script>
+    <script src="/static/Bootstrap-3.4.1/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Datatables -->
+    <link href="/static/datatables.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/static/datatables.min.js"></script>
+    <script type="text/javascript">
+ 
+
+    
+        $(document).ready(function() {
+            $('#datatable').DataTable( {
+                "pageLength": 50
+            });
+        });
+    </script>
+
+  </head>
+  <body>
+
+      <div class="container">
+          <nav class="navbar">
+              <div class="header">
+                <section>
+                    <div class='msg'>
+                  <h1>DOCKER REGISTRY UI</h1>
+                  
+                    </div>
+                   
+                  </section>
+                  </ul>
+                  
+                  <hr>
+              </div>
+          </nav>
+
+
+          {% block content %}
+              Template Content
+          {% endblock %}
+
+     
+
+      </div>
+
+      <script type="text/javascript">
+          // For demo to fit into DataTables site builder...
+          $('#datatable')
+            
+              .addClass('table table-striped table-bordered table-dark  table-hover'
+           
+          );
+      </script>
+
+    </body>
+</html>
