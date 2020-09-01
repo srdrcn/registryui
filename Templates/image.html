@@ -74,9 +74,9 @@ function(data) { }); return false; }); }); </script>
 
     <div class="panel-body">
 <pre>
-docker run <b>{{ url }}/{{ image }}:&lt;tag&gt;</b>
-docker pull <b>{{ url }}/{{ image }}:&lt;tag&gt;</b>
-docker push <b>{{ url }}/{{ image }}:&lt;tag&gt;</b>
+docker run <b>{{ url }}/{{ image }}:tag</b>
+docker pull <b>{{ url }}/{{ image }}:tag</b>
+docker push <b>{{ url }}/{{ image }}:tag</b>
 </pre>
     </div>
 
@@ -93,9 +93,14 @@ docker push <b>{{ url }}/{{ image }}:&lt;tag&gt;</b>
    });
 
     function goBack() {
-      window.history.back();
-
+      
+        window.history.go(-1);
+      
     }
+   
+
+
+
     </script>
               
 </p>

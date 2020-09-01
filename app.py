@@ -38,13 +38,20 @@ def get_data_from_html():
         session["url"] = url
         session["username"] = username
         session["password"] = password
+        kwargs = {          
+        
+       
+        
+        'url':url
+        
+        }
            
         response = requests.get(url+'/v2/_catalog',
     auth=HTTPBasicAuth(username,password),verify=False)
         j = response.json()
 
     
-        return render_template('home.html',images=j['repositories'])
+        return render_template('home.html',images=j['repositories'],frontend_url=url)
         
 @app.route('/image/<path:image>')
 def image(image):
@@ -118,7 +125,7 @@ def handle_exception(e):
 
 
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0')
+    app.run(debug=True,host='0.0.0.0',port=5001)
         
   
 
