@@ -1,4 +1,4 @@
-# Registry UI
+# Docker Registry UI
 
 ##Usage
 
