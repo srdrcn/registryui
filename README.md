@@ -7,3 +7,6 @@ It does not need to be connected with the docker sock. You can easly log in a re
 As an example, you can run it as follows.
 
 docker run -p 5003:5001 chosenwar/registryui:latest
+
+
+![](registryuiapp.gif)
