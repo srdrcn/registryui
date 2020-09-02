@@ -132,20 +132,3 @@ if __name__ == '__main__':
 
 
 
-#url = "https://10.10.0.243:5000/v2"
-#username = 'admin'
-#password = 'PassworD123'
-
-#session = requests.Session()
-# these are sent along for all requests
-
-# not strictly needed, but the documentation recommends it.
-#session.headers['Accept'] = "application/json; charset=UTF-8"
-
-# log in first, to get the tokens
-#response = session.post(
-#    url + '/_catalog',
-#    json={'identifier': username, 'password': password},
-#    headers={'VERSION': '2'},
-#    verify=False
-#)
