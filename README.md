@@ -31,3 +31,4 @@ The second is terminal-app (ttyd)
 
 
 ![](registryuiapp.gif)
+![](newfeature.png)
