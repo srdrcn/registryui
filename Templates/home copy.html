@@ -1,0 +1,143 @@
+
+<html>
+<head>  <link rel="stylesheet" href="/static/Bootstrap-4-4.1.1/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="/static/Bootstrap-4-4.1.1/js/bootstrap.min.js"></script>
+<style>.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+.form__field::placeholder {
+    color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+}
+/* reset input */
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+/* demo */
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    background-color: #222;
+}
+</style>
+
+</head>
+    <body>
+  <script>var loc = window.location.toString(),
+    params = loc.split('?')[1],
+    iframe = document.getElementById('myIframe');
+    iframe.src = iframe.src + '?' + params;​​​​​​​​​​​​​​​​</script>
+    
+  {% extends "layout.html" %}
+  
+  {% block content %}
+  
+  <div class="panel panel-primary">
+  
+    
+  
+      <div class="panel-body"></div>
+          <table id="datatable" class="display">
+              <thead>
+                  <tr>
+                      <th>
+                     
+                        <h3><svg width="3.0em" height="0.7em" viewBox="0 0 16 16" class="bi bi-archive-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
+                          </svg>Repository</h3></th>
+                  </tr>
+              </thead>
+              <tbody>
+                
+                  {% for image in images %}
+                      <tr>
+                          <td>  <a href="image/{{ image }}">
+                            <svg width="3.0em" height="1.2em"  viewBox="-1 -4 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                              </svg>
+                              
+                        <b>{{ image }}</b></i></td></div></a>
+                        
+                      </tr>
+                  {% endfor %}
+              </tbody>
+          </table>
+      </div>
+      
+     
+
+  
+     
+    
+      <form action="" method="post" id="url-setter">
+          <input class="input100" type="text" name="url"
+        input type="text" style="color: white; font-size: small; background-color: #3B4654; font-family:Arial, Helvetica, sans-serif"  name="url" id="url" />
+        
+        <button type="submit" class="btn btn-danger" style="color: white; font-size: larger; background-color: #3B4654; font-family:monospace; border-radius:1.25rem" name="submit">Enter Terminal App URL</button>
+    </form>
+    <iframe id="the-frame"  height="300px" width="100%" src="static\terminal.png"></iframe>
+  
+    <script type="text/javascript">
+        (function () {
+            "use strict";
+            var url_setter = document.getElementById('url-setter'), url = document.getElementById('url'), the_iframe = document.getElementById('the-frame');
+            url_setter.onsubmit = function (event) {
+                event.preventDefault();
+                the_iframe.src = url.value;
+            };
+        }());
+    </script>
+       
+  </div>
+  {% endblock %}
+  </html>

@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  registry: 
+    image: "chosenwar/registryui"
+    ports:
+      - "5003:5001"
+  shell:
+    image: "ibmappmodernization/web-terminal:latest"
+    ports: 
+      - "5005:7681"
