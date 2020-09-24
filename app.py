@@ -37,11 +37,18 @@ def get_data_from_html():
     url = request.form['url']
     username = request.form['username']
     password = request.form['password']
+    
+  
+   
     frontend_url = url
-
+ 
     session["url"] = url
     session["username"] = username
     session["password"] = password
+   
+    url = session.get("url")
+    
+  
     kwargs = {
 
 
@@ -63,6 +70,7 @@ def image(image):
     username = session.get("username")
     password = session.get("password")
     url = session.get("url")
+    shellurl = session.get("shellurl")
 
     response1 = requests.get(url+'/v2/'+image+'/tags/list', auth=HTTPBasicAuth(username, password),
                              verify=False)
