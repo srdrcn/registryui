@@ -115,15 +115,20 @@ body {
       </div>
       
      
-
+      <div class="alert alert-danger" style="background-color: #3B4654; color:white"  role="alert">
+        You can garbage collection by connecting to the machine with ssh via the terminal.
+        command: bin/registry garbage-collect  /etc/docker/registry/config.yml  
+      
+    </div>
   
      
-    
       <form action="" method="post" id="url-setter">
-          <input class="input100" type="text" name="url"
-        input type="text" style="color: white; font-size: small; background-color: #3B4654; font-family:Arial, Helvetica, sans-serif"  name="url" id="url" />
+         
+       <div class="col-xs-3">
+        <input type="text" class="form-control"  style="color: white; font-size: small; background-color: #3B4654; font-family:Arial, Helvetica, sans-serif"   value="http://"  name="url" id="url" /></div>
         
-        <button type="submit" class="btn btn-danger" style="color: white; font-size: larger; background-color: #3B4654; font-family:monospace; border-radius:1.25rem" name="submit">Enter Terminal App URL</button>
+        <button type="submit" class="btn btn-danger" style="color: white; font-size: large; background-color: #3B4654; font-family:monospace; border-radius:1.25rem" name="submit">Enter Terminal App URL</button>
+        
     </form>
     <iframe id="the-frame"  height="300px" width="100%" src="static\terminal.png"></iframe>
   
