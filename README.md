@@ -3,7 +3,7 @@
 
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://hub.docker.com/r/chosenwar/registryui/builds)
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/srdrcn/registryui/blob/master/LICENSE)
 
 
 
