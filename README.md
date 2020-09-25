@@ -22,10 +22,10 @@ As an example, you can run it as follows.
     The first is registry ui,<br/>
     The second is terminal-app (ttyd) https://tsl0922.github.io/ttyd/
 
-**For this reason, it is necessary to write http: // <MACHINEIP> <Port> on the textbox on the main page, where you run the image.**
+**For this reason, it is necessary to write http://IMAGEMACHINEIP:PORT  on the textbox on the main page, where you run the image.**
  ### Best Practice Usage
   ```sh
- docker run  -d -p  5003:5001 -p 5005:7681 chosenwar/registryui:latest
+ docker run  -d -p  **5003:5001** -p **5005:7681** chosenwar/registryui:latest
 ```
 
 
