@@ -3,6 +3,7 @@
 
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://hub.docker.com/r/chosenwar/registryui/builds)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 
@@ -17,9 +18,9 @@ As an example, you can run it as follows.
 # New Features!
 
   - **Now there is an internal terminal on the home page.**
-Two applications are running in image.
-The first is registry ui,
-The second is terminal-app (ttyd)
+    **Two applications are running in image.**
+    The first is registry ui,<br/>
+    The second is terminal-app (ttyd) https://tsl0922.github.io/ttyd/
 
 **For this reason, it is necessary to write http: // <MACHINEIP> <Port> on the textbox on the main page, where you run the image.**
  ### Best Practice Usage
