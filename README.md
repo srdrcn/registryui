@@ -32,4 +32,4 @@ As an example, you can run it as follows.
 
 
 ![](registryuiapp.gif)
-![](newfeature.png)
+![](newfeatureimage.png)
