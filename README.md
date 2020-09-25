@@ -18,7 +18,7 @@ As an example, you can run it as follows.
 # New Features!
 
   - **Now there is an internal terminal on the home page.**
-    **Two applications are running in image.**
+    **Two applications are running in image.**<br/>
     The first is registry ui,<br/>
     The second is terminal-app (ttyd) https://tsl0922.github.io/ttyd/
 
