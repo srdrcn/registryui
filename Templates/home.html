@@ -4,17 +4,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="/static/Bootstrap-4-4.1.1/js/bootstrap.min.js"></script>
+   
 <style>.form__group {
-    position: relative;
-    padding: 15px 0 0;
-    margin-top: 10px;
+    position:fixed;
+    padding: 0px 0 0;
+    margin-top: 0px;
     width: 50%;
 }
 .form__field {
     font-family: inherit;
     width: 100%;
     border: 0;
-    border-bottom: 2px solid #9b9b9b;
+    border-bottom: 0px solid #9b9b9b;
     outline: 0;
     font-size: 1.3rem;
     color: #fff;
@@ -41,8 +42,8 @@
 .form__field:focus {
     padding-bottom: 6px;
     font-weight: 700;
-    border-width: 3px;
-    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-width: 0px;
+    
     border-image-slice: 1;
 }
 .form__field:focus ~ .form__label {
@@ -51,7 +52,7 @@
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: #11998e;
+    
     font-weight: 700;
 }
 /* reset input */
@@ -69,6 +70,28 @@ body {
     font-size: 1.5rem;
     background-color: #222;
 }
+
+
+.container .content {
+    display:none;
+    border-radius: 5px;
+    border-color: #222;
+    
+}
+.container .header {
+    background-color: #3B4654;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width:8.50em;
+    border-radius: 2px;
+    border: 0;
+    line-height: 15px;
+    text-align: center;
+    font-size: larger;
+    
+}
+
 </style>
 
 </head>
@@ -115,23 +138,34 @@ body {
       </div>
       
      
-      <div class="alert alert-danger" style="background-color: #3B4654; color:white"  role="alert">
-        You can garbage collection by connecting to the machine with ssh via the terminal.
-        command: bin/registry garbage-collect  /etc/docker/registry/config.yml  
+     
       
     </div>
   
-     
-      <form action="" method="post" id="url-setter">
+    <div class="container">
+        <div class="header"><span id='span1' >Open Terminal</span>
+    
+        </div>
+        <div class="content">
+
+            <div class="alert alert-danger" style="background-color: #3B4654; color:white"  role="alert">
+                You can garbage collection by connecting to the machine with ssh via the terminal.
+                command:<b style="font-size: medium;">  bin/registry garbage-collect  /etc/docker/registry/config.yml </b>
+              
+            <form action="" method="post" id="url-setter">
          
-       <div class="col-xs-3">
-        <input type="text" class="form-control"  style="color: white; font-size: small; background-color: #3B4654; font-family:Arial, Helvetica, sans-serif"   value="http://"  name="url" id="url" /></div>
-        
-        <button type="submit" class="btn btn-danger" style="color: white; font-size: large; background-color: #3B4654; font-family:monospace; border-radius:1.25rem" name="submit">Enter Terminal App URL</button>
-        
-    </form>
-    <iframe id="the-frame"  height="300px" width="100%" src="static\terminal.png"></iframe>
-  
+                <div class="col-xs-3">
+                 <input type="text" class="form-control"  style="color: white; font-size: small; background-color: #3B4654; font-family:Arial, Helvetica, sans-serif"   value="http://"  name="url" id="url" /></div>
+                 
+                 <button type="submit" class="btn btn-danger" name="submit">Enter Terminal App URL</button>
+                 
+             </form>
+             <iframe id="the-frame"  height="300px" width="100%" src="static\terminal.png"></iframe>
+           
+        </div>
+    </div>
+    
+     
     <script type="text/javascript">
         (function () {
             "use strict";
@@ -142,7 +176,27 @@ body {
             };
         }());
     </script>
+
+    <script type="text/javascript">
+    $(".header").click(function () {
+
+$header = $(this);
+//getting the next element
+$content = $header.next();
+//open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+$content.slideToggle(500, function () {
+    //execute this after slideToggle is done
+    //change text of header based on visibility of content div
+    $header.text(function () {
+        //change text based on condition
+        return $content.is(":visible") ? "Close Terminal" : "Open Terminal";
+    });
+});
+
+});</script>
        
   </div>
+
+
   {% endblock %}
   </html>
