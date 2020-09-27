@@ -15,7 +15,9 @@ RUN apt-get update && apt-get install -y \
   sudo \
   systemd \
   openjdk-8-jdk \
-  maven 
+  maven \
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/*
   
 
 
