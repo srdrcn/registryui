@@ -3,9 +3,8 @@
 
 [![Build Status](https://srdrcn.semaphoreci.com/badges/registryui/branches/master.svg)](https://srdrcn.semaphoreci.com/projects/registryui)
 [![Build Status](https://srdrcn.semaphoreci.com/badges/registryui/branches/master.svg?style=shields)](https://srdrcn.semaphoreci.com/projects/registryui)
-
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/srdrcn/registryui/blob/master/LICENSE)
- [![Codacy Badge](https://app.codacy.com/project/badge/Grade/187389b07dc54eb69289f0afb54913f2)](https://www.codacy.com/manual/srdrcn/registryui/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=srdrcn/registryui&amp;utm_campaign=Badge_Grade)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/srdrcn/registryui/blob/master/LICENSE)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/187389b07dc54eb69289f0afb54913f2)](https://www.codacy.com/manual/srdrcn/registryui/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=srdrcn/registryui&amp;utm_campaign=Badge_Grade)
 
 
 
