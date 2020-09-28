@@ -1,6 +1,6 @@
 # Docker Registry UI
 
-
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Build Status](https://srdrcn.semaphoreci.com/badges/registryui/branches/master.svg)](https://srdrcn.semaphoreci.com/projects/registryui)
 [![Build Status](https://srdrcn.semaphoreci.com/badges/registryui/branches/master.svg?style=shields)](https://srdrcn.semaphoreci.com/projects/registryui)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/srdrcn/registryui/blob/master/LICENSE)
