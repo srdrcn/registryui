@@ -1,0 +1,20 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: docker-registryui
+spec:
+  selector:
+    matchLabels:
+      app: docker-registryui
+  replicas: 1 
+  template:
+    metadata:
+      labels:
+        app: docker-registryui
+    spec:
+      containers:
+      - name: docker-registryui
+        image: chosenwar/registryui:latest
+        ports:
+        - containerPort: 5001
+        - containerPort: 7681
