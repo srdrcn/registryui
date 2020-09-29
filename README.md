@@ -19,11 +19,12 @@ As an example, you can run it as follows.
 
 
 # New Features!
-
+  - **Kubernetes yaml added. You can now deploy to kubernetes. (Deploy-Kubernetes Folder)
   - **Now there is an internal terminal on the home page.**
     **Two applications are running in image.**<br/>
     The first is registry ui,<br/>
     The second is terminal-app (ttyd) https://tsl0922.github.io/ttyd/
+ 
 
 **For this reason, it is necessary to write http://IMAGEMACHINEIP:PORT  on the textbox on the main page, where you run the image.**
  ### Best Practice Usage
