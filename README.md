@@ -19,7 +19,7 @@ As an example, you can run it as follows.
 
 
 # New Features!
-  - **Kubernetes yaml added. You can now deploy to kubernetes. (Deploy-Kubernetes Folder)
+  - **Kubernetes yaml added. You can now deploy to kubernetes. (Deploy-Kubernetes Folder)**
   - **Now there is an internal terminal on the home page.**
     **Two applications are running in image.**<br/>
     The first is registry ui,<br/>
