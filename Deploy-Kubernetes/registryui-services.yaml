@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: docker-registryui
+  labels:
+    app: docker-registryui
+spec:
+  type: NodePort #Exposes the service as a node ports
+  ports:
+  - port: 5001
+    name: docker-registryui
+    protocol: TCP
+    targetPort: 5001
+    nodePort: 30043
+  - port: 7681
+    name: docker-registryui-terminal
+    protocol: TCP
+    targetPort: 7681
+    nodePort: 30443
+  selector:
+    app: docker-registryui
