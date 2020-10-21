@@ -16,5 +16,5 @@ spec:
       - name: docker-registryui
         image: chosenwar/registryui:latest
         ports:
-        - containerPort: 5001
-        - containerPort: 7681
+        - containerPort: 5001 #Expose port
+        - containerPort: 7681 #Expose port
