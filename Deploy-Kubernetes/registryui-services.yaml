@@ -13,9 +13,9 @@ spec:
     targetPort: 5001
     nodePort: 30043
   - port: 7681
-    name: docker-registryui-terminal
+    name: docker-registryui-terminal  #terminal name
     protocol: TCP
-    targetPort: 7681
-    nodePort: 30443
+    targetPort: 7681 #Terminal requried port
+    nodePort: 30443 #Terminal port
   selector:
-    app: docker-registryui
+    app: docker-registryui #Deployment selector name
